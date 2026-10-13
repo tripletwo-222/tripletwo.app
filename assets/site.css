@@ -1,0 +1,28 @@
+:root{--paper:#FFF3DF;--ink:#231A2B;--muted:#6B5E6E;--sun:#FFD23F;--mint:#4FD8AE;--tang:#FF9640;--card:#FFFFFF;--line:#EADCC4}
+@media (prefers-color-scheme:dark){:root{--paper:#1C1620;--ink:#FFF3DF;--muted:#BFB2C2;--card:#271F2C;--line:#3A2F40}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.08em;text-decoration:none}
+.dots{display:inline-flex;gap:4px}.dots i{width:10px;height:10px;border-radius:50%;display:block}
+.dots i:nth-child(1){background:var(--mint)}.dots i:nth-child(2){background:var(--sun)}.dots i:nth-child(3){background:var(--tang)}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:15px}nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(34px,7vw,56px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.hero p{font-size:18px;color:var(--muted);margin:0;max-width:560px}
+section{padding:28px 0}
+h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.app{display:flex;gap:20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px}
+.app img{width:96px;height:96px;border-radius:22px;flex:none}
+.app h3{margin:0 0 4px;font-size:20px}.app p{margin:0;color:var(--muted)}
+.tag{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;background:var(--sun);color:#231A2B;border-radius:999px;padding:3px 12px}
+.links{margin-top:8px;font-size:14px}.links a{color:var(--muted);margin-right:14px}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px}
+.contact a.mail{font-size:20px;font-weight:700}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 48px;font-size:13px;color:var(--muted)}
+footer dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;margin:0}
+footer dt{font-weight:700}footer dd{margin:0}
+@media (max-width:520px){.app{flex-direction:column;align-items:flex-start}nav a{margin-left:12px}}

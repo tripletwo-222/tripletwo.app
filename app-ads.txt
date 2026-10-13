@@ -1,0 +1,2 @@
+# app-ads.txt for tripletwo.app
+# AdMob line will be added after the AdMob account is created.
